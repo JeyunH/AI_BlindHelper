@@ -1,0 +1,8 @@
+# ipynp_checkpoints
+.ipynb_checkpoints/
+
+# mp4
+*.mp4
+
+# yolo.pt
+*.pt
