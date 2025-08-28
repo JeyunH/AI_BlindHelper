@@ -1,4 +1,4 @@
-# 👁️ 시각 장애인을 위한 AI 기반 충돌 위험 경고 시스템
+# 👁️시각 장애인을 위한 AI 기반 충돌 위험 경고 시스템👁️
 
 **실시간 영상 분석을 통해 시각 장애인의 보행 안전을 돕는 AI 애플리케이션입니다.**
 
@@ -6,7 +6,9 @@
 
 <p align="center"><img src="./statics/yolo+DeepSortW640,S200.gif" width="700"><br><em>현재 진행 현황</em></p>
 
-## 🌟 주요 기능
+---
+
+## 1. 주요 기능
 
 - **실시간 객체 탐지**: **YOLOv8** 모델을 사용하여 사람, 자동차, 자전거 등 보행 중 마주칠 수 있는 다양한 객체를 실시간으로 탐지합니다.
 - **충돌 위험 객체 필터링**: 탐지된 여러 객체 중 사용자에게 실질적인 위협이 될 수 있는 특정 객체들(예: 자동차, 오토바이)을 선별합니다.
@@ -16,7 +18,7 @@
 
 ---
 
-## 🛠️ 사용된 기술
+## 2. 사용된 기술
 
 - **프로그래밍 언어**: Python
 - **메인 라이브러리**: OpenCV, PyTorch, NumPy
@@ -27,34 +29,43 @@
 
 ---
 
-## ⚙️ 시작하기
+## 3. 시작하기
 
-### 1. 사전 요구 사항
+### 1) 사전 요구 사항
 
 - Python 3.8 이상
-- pip
+- pip 가 최신 버전인지 확인하는 것을 권장
+```bash
+pip install --upgrade pip
+```
 - git
 
-### 2. 설치 가이드
+### 2) 설치 가이드
+
+**💡 권장 사항**
+- 가상 환경 사용: 프로젝트별로 독립된 개발 환경을 구성하기 위해 venv나 conda 같은 가상 환경 내에 설치하는 것을 권장합니다.
 
 1.  **프로젝트 클론**
     ```bash
-    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-    cd your-repository-name
+    git clone https://github.com/JeyunH/AI_BlindHelper.git
     ```
-
-2.  **필요한 라이브러리 설치**
+    
+2.  **주피터 노트북 or 주피터 랩 설치**
     ```bash
-    pip install -r requirements.txt
+    pip install jupyter
     ```
-    *(주의: `requirements.txt` 파일에 `opencv-python`, `torch`, `ultralytics` 등 필요한 라이브러리를 모두 기재해야 합니다.)*
-
-3.  **YOLOv8 및 MiDaS 모델 가중치 파일 다운로드**
-    *(모델 파일을 다운로드하고 특정 폴더에 위치시키는 방법에 대한 안내를 추가하세요.)*
+    or
+    ```bash
+    pip install jupyterlab
+    ```
+    
+3.  **필요한 라이브러리 설치**<br>
+    주피터 노트북에서 [**1_라이브러리 환경 셋팅.ipynb**] 파일을 실행 <br>
+    *(주의: pytorch 라이브러리를 설치할 때, 자신의 cuda 버전에 맞게 설치해야 합니다. https://pytorch.org/get-started/previous-versions/ 참조)*
 
 ---
 
-## 🚀 실행 방법
+## 4. 실행 방법
 
 - **실시간 웹캠으로 실행**
     ```bash
@@ -68,7 +79,7 @@
 
 ---
 
-## 📚 프로젝트 진행 과정
+## 5. 프로젝트 진행 과정
 
 이 프로젝트는 다음과 같은 단계별 기능 구현을 통해 개발되었습니다.
 
@@ -81,3 +92,9 @@
 7.  **성능 개선 (Multithreading)**: 음성 출력 시 영상이 멈추는 문제를 멀티스레딩으로 해결
 8.  **객체 추적 (DeepSort)**: 탐지된 객체의 이동 경로를 추적하는 기능 추가
 9.  **최종 시스템 통합**: 객체 탐지, 추적, 근접 판단, 음성 경고 기능을 모두 통합하여 최종 애플리케이션 완성
+
+---
+
+## 🧑‍💻 개발자
+*   **황제윤** ([@JeyunH](https://github.com/JeyunH))
+*   폴리텍 성남 하이테크과정[인공지능소프트웨어과]
