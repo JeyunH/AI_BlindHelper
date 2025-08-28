@@ -4,8 +4,7 @@
 
 이 프로젝트는 웹캠이나 로컬 영상 파일을 통해 주변 환경을 실시간으로 분석하고, 사용자에게 잠재적인 충돌 위험 객체를 음성으로 경고하여 보다 안전한 보행을 지원하는 것을 목표로 합니다.
 
-<p align="center"><img src="./etc/yolo+DeepSort150.gif" width="700" alt="Intro gif" title="현재 진행 현황"><br><em>현재 진행 현황</em></p>
----
+<p align="center"><img src="./statics/yolo+DeepSort150.gif" width="700" alt="Intro gif" title="현재 진행 현황"><br><em>현재 진행 현황</em></p>
 
 ## 🌟 주요 기능
 
