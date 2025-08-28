@@ -4,7 +4,7 @@
 
 이 프로젝트는 웹캠이나 로컬 영상 파일을 통해 주변 환경을 실시간으로 분석하고, 사용자에게 잠재적인 충돌 위험 객체를 음성으로 경고하여 보다 안전한 보행을 지원하는 것을 목표로 합니다.
 
-![시각 장애인이 흰 지팡이를 짚고 보도를 걷는 이미지](https://placehold.co/800x400/7CAAF5/FFFFFF?text=Project+Main+Image&font=sans)
+![Intro gif](./statics/yolo+DeepSort150.gif)
 
 ---
 
