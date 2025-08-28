@@ -67,16 +67,8 @@ pip install --upgrade pip
 
 ## 4. 실행 방법
 
-- **실시간 웹캠으로 실행**
-    ```bash
-    python main_webcam.py
-    ```
-
-- **로컬 영상 파일로 실행**
-    ```bash
-    python main_video.py --input video_file.mp4
-    ```
-
+- **각 주피터노트북 파일 실행**
+- **웹캠 또는 테스트용 동영상 파일 필요**
 ---
 
 ## 5. 프로젝트 진행 과정
